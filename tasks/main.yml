@@ -2,7 +2,7 @@
 - name: Set Password
   win_user:
     name: administrator
-    password: "{{ dc_password }}"
+    password: "{{ win_password_admin }}"
     state: present
   ignore_errors: True  
 
@@ -15,7 +15,7 @@
   win_dns_client:
     adapter_names: '*'
     ipv4_addresses:
-    - '{{ dc_upstream_dns_1 }}'
+    - '{{ dc_dns_upstream }}'
 
 - name: Stop the time service
   win_service:
