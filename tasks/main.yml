@@ -2,7 +2,7 @@
 - name: Set Password
   win_user:
     name: administrator
-    password: "{{ win_password_admin }}"
+    password: "{{ dc_password_admin }}"
     state: present
   ignore_errors: True  
 
