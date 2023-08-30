@@ -1,6 +1,0 @@
----
-# vars file for ansible-role-win-dc-base
-
-dc_password_admin: YourPassword
-dc_dns_upstream: 1.2.3.4
-dc_ntp_servers: 1.2.3.4
